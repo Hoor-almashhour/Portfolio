@@ -5,10 +5,10 @@ import { useParams } from 'react-router-dom';
 import { LuCircleArrowOutUpRight } from "react-icons/lu";
 import Button from '../../components/Button/Button';
 import './ProjectDetails.css'
-import EduPress from '../../assets/images/projectsImg/EduPress.png';
-import ProductShowcase from '../../assets/images/projectsImg/ProductShowcase.png';
-import ManagePosts from '../../assets/images/projectsImg/ManagePosts.png';
-import Blogs from '../../assets/images/projectsImg/Blogs.png';
+import EduPress from '../../assets/images/ProjectsImg/EduPress.png';
+import ProductShowcase from '../../assets/images/ProjectsImg/ProductShowcase.png';
+import ManagePosts from '../../assets/images/ProjectsImg/ManagePosts.png';
+import Blogs from '../../assets/images/ProjectsImg/Blogs.png';
 import Screenshot5 from '../../assets/images/FullScreen/Screenshot5.png';
 import PortfolioSlider from '../../components/PortfolioSlider/PortfolioSlider';
 import Footer from '../../components/Footer/Footer';
@@ -20,7 +20,7 @@ const projects = [
             id: 1,
             title: 'EduPress',
             icon:<LuCircleArrowOutUpRight />,
-            image:  EduPress,
+            image: EduPress,
             fullDescription: 'EduPress is an online learning platform designed to help you build skills and achieve your educational goals. Offering a variety of courses across top categories like Art & Design, Development, Communication, and Marketing, EduPress provides a seamless and engaging learning experience. With featured courses, expert instructors, and user-friendly tools like LearnPress LMS, it caters to students and educators alike. Whether you’re starting a new career, enhancing your knowledge, or teaching others, EduPress is your go-to platform for growth and success.',
             date: '30-10-2024',
             languages: 'Html5, Css',
