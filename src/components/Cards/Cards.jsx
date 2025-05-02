@@ -1,10 +1,10 @@
 import './Cards.css'
 import { LuCircleArrowOutUpRight } from "react-icons/lu";
 import { SlSizeFullscreen } from "react-icons/sl";
-import EduPress from '../../assets/images/projectsImg/EduPress.png';
-import ProductShowcase from '../../assets/images/projectsImg/ProductShowcase.png';
-import ManagePosts from '../../assets/images/projectsImg/ManagePosts.png';
-import Blogs from '../../assets/images/projectsImg/Blogs.png';
+import EduPress from '../../assets/images/ProjectsImg/EduPress.png';
+import ProductShowcase from '../../assets/images/ProjectsImg/ProductShowcase.png';
+import ManagePosts from '../../assets/images/ProjectsImg/ManagePosts.png';
+import Blogs from '../../assets/images/ProjectsImg/Blogs.png';
 import Screenshot1 from '../../assets/images/FullScreen/Screenshot1.png';
 import Screenshot2 from '../../assets/images/FullScreen/Screenshot2.png';
 import Screenshot3 from '../../assets/images/FullScreen/Screenshot3.png';
