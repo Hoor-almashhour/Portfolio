@@ -34,7 +34,6 @@ const AboutMe = () => {
                             <div className="progress" style={{  width: `${skill.percentage}%` }}>
                               <span className="circle"></span>
                               <span className='tooltip'>{`${skill.percentage}%`}</span> 
-                                <span className='Polygon'></span>
                             </div>
                         </div>
                     </div>

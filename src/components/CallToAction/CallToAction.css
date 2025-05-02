@@ -3,9 +3,7 @@
     z-index: 4;
     margin-top: 165px;
     .container {
-        width: 90%;
         height: 376px;
-        margin: 0 120px;
         .bg{
             position: absolute;
             width: 80%;
@@ -13,6 +11,7 @@
             background-color: #7de0ea;
             transform: rotate(-1.34deg);
             border-radius: 32px;
+            left: 9%;
         }
         .section-content{
             background-image: url("src/assets/images/CallToAction/LinesCall.svg");
@@ -25,6 +24,7 @@
             display: flex;
             align-items: center;
             justify-content: space-evenly;
+            left: 5%;
             .vector {
                 position: absolute;
                 top: 0;
@@ -67,13 +67,13 @@
 @media screen and (max-width : 992px) {
     .CallToAction {
         .container {
-                height: 280px;
-                margin: 0px 70px;
+            margin: 0 auto;
                 .section-content {
                     flex-direction: column;
                     justify-content: center;
+                    align-items: center;
                     gap: 20px;
-                    padding: 20px 0px;
+                    padding: 20px ;
                 .title1{
                         h2 {
                             font-size: 30px;

@@ -1,5 +1,6 @@
     .contact-section {
-        padding: 94px 70px;
+        margin-bottom: 94px;
+        padding: 0 70px;
     }
     .contact-content {
         display: flex;
@@ -84,6 +85,7 @@
 /*************************Contact Responsive***********************/
 @media screen and (max-width : 992px) {
     .contact-section{
+        padding: 0 20px;
         .contact-content{
             flex-direction: column;
             .contact-form{

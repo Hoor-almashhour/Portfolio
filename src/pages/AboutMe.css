@@ -35,7 +35,7 @@
         }
         
         .progress {
-            height: 10px;
+            height: 100%;
             background: var(--second-color);
             color: #FFFFFF;
             font-size: 0.8rem;
@@ -57,7 +57,7 @@
             }
             .tooltip{
                 position: absolute;
-                background-color:  var(--second-color);;
+                background-color:  var(--second-color);
                 color: #FFFFFF;
                 border-radius: 4px;
                 width: 33px;
@@ -65,16 +65,15 @@
                 top: -55px;
                 left: 95%;
             }
-            .Polygon{
+            .tooltip::after{
+                content: "";
                 position: absolute;
-                top: -35px;
-                left: 98%;
-                width: 10px;
-                height: 10px;
-                border-radius: 1px;
-                background-color:  var(--second-color);
-                transform: translate(-50%, -50%) rotate(-42deg); 
-                z-index: -1;
+                top: 100%;
+                left: 50%;
+                transform: translateX(-50%);
+                border-width: 5px;
+                border-style: solid;
+                border-color: var(--second-color) transparent transparent transparent;  
             }
         }
         
@@ -190,17 +189,6 @@
             }
             .about-icons {
                 display: none;
-            }
-            .about-content{
-                .skills{
-                    .skill{
-                        .progress{
-                            .Polygon{
-                                left: 102%;
-                            }
-                        }
-                    }
-                }
             }
         }
     }
