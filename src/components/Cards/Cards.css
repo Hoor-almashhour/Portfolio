@@ -1,0 +1,138 @@
+    .project-card {
+            position: relative;
+            border-radius: 8px;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            .image-container{
+                position: relative;
+                width: 100%;
+                height: 220px;
+                overflow: hidden;
+                border-radius: 8px;
+                .card-image{
+                    width: 100%;
+                    height: 100%;
+                    cursor: pointer;
+                    border-radius: 8px;
+                }
+                .overlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background-color: rgba(0,0,0,0.5); 
+                    opacity: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: opacity 0.3s all ease-in-out;
+                    border-radius: 8px;
+                }
+            }
+            .image-container:hover .overlay {
+                opacity: 1;
+            }
+            
+            .image-container:hover .card-image {
+                transform: scale(1.05);
+            }
+            
+            .icons {
+                display: flex;
+                gap: 32px;
+                .icon {
+                    padding: 10px;
+                    font-size: 60px;
+                    cursor: pointer;
+                    transition: transform 0.3s ease;
+                    color: #ffff;
+                }
+            }
+            .icon:hover {
+                transform: scale(1.2);
+                color: var(--second-color);
+                
+            }
+            .proj-content{
+                display: flex;
+                gap: 8px;
+                align-items: center;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                margin-top: 32px;
+                position: relative;
+                .proj-name{
+                    text-align: start;
+                    position: relative;
+                    h3 {
+                        font-size: 22px;
+                        margin-bottom: 0.5rem;
+                        font-weight: 600;
+                        color: var(--first-color);
+                    }
+                    p {
+                        color: #98A2B3;
+                        font-size: 14px;
+                        font-weight: 200;
+                        width: 242px;
+                    }
+                }
+                .proj-icon{
+                    position: absolute;
+                    top: 0;
+                    right: 8px;
+                    .details-link{
+                        transform: translate(-50%, -50%); 
+                        font-size: 24px;
+                        color: #1d2130;
+                        transition: all 0.3s ease;
+                        z-index: 1;
+                        svg{
+                            cursor: pointer;
+                            font-size: 35px;
+                            color: var(--second-color);
+                        }
+                    }
+                }
+            }
+        
+        }
+        .project-card {
+            transition: transform 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+    
+
+.mode-dark .project-card .proj-content .proj-name h3 {
+    color: var(--bg-color);
+} 
+.mode-dark .project-card .proj-content .proj-name p {
+    color: #98A2B3;
+} 
+/*************************Cards Responsive***********************/
+@media screen and (max-width : 992px) {
+    .project-card{
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        .proj-content{
+            .proj-name{
+                h3{
+                    font-size: 18px;
+                }
+                p{
+                    font-size: 12px;
+                }
+            }
+            .proj-icon{
+                svg{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
