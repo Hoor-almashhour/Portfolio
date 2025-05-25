@@ -85,4 +85,7 @@
                 }
             }
         }
+        .section-content{
+            background-image: url("src/assets/images/CallToAction/LinesCall.svg");
+        }
     }
