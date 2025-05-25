@@ -87,18 +87,18 @@ nav {
             display: flex;
         }
         ul.nav-links {
-        display: none !important ;
-        flex-direction: column;
-        position: absolute;
-        right: 30px;
-        top: 30px;
-        width: 50%;
-        z-index: 999;
+            display: none !important ;
+            flex-direction: column;
+            position: absolute;
+            right: 30px;
+            top: 40px;
+            width: 50%;
+            z-index: 999;
         li {
             box-shadow: 0 4px 10px rgba(244, 172, 207, 0.5); 
             border-bottom: 2px solid var(--second-color);
             width: 130%;
-            padding-left: 10px;
+            padding-left: 15px;
             .mode{
                 display: block;
             }
@@ -118,11 +118,16 @@ nav {
     }
     
     .mode-dark nav {
-    background-color: #1b2431;
+        background-color: #1b2431;
     }
 
     .mode-dark ul.nav-links li {
         background-color: #1b2431;
+        padding-left: 15px;
+        box-shadow: 0 4px 10px rgba(244, 172, 207, 0.3);
+    }
+    .mode-light ul.nav-links li {
+        padding-left: 15px;
         box-shadow: 0 4px 10px rgba(244, 172, 207, 0.3);
     }
     
