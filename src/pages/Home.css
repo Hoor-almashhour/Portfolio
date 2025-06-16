@@ -149,8 +149,8 @@
                     position: relative;
                     height: auto;
                     z-index: 2;
-                    left: -29%;
-                    width: 100%;
+                    bottom: 8%;
+                    width: 60%;
                 }
             }
         }

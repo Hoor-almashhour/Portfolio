@@ -1,5 +1,5 @@
 import  './Home.css'
-import profileImg from'../assets/images/HeroImg/ProfileImg.webp'
+import profileImg from'../assets/images/HeroImg/ProfileImg.png'
 import Lines from '../assets/images/HeroImg/Lines.svg';
 const Home = () => {
     function download() {
