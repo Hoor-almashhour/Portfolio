@@ -1,0 +1,36 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --first-color :#1D2130;
+  --second-color:#7DE0EA;
+  --third-color:#583FBC;
+  --bg-color: #FFFFFF;
+  --text-color:#43495B;
+  --bg2-color:#D798E1;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+.mode-light {
+  color:  var(--first-color);
+  background-color: var(--bg-color);
+  transition: 0.3s ease, color 0.3s ease;
+}
+.mode-dark {
+  color: var(--bg-color);
+  background-color: #1b2431;
+  transition: 0.3s ease, color 0.3s ease;
+}
+
+
+
+
+
+

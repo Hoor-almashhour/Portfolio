@@ -1,0 +1,92 @@
+.CallToAction{
+    position: relative;
+    z-index: 4;
+    margin-top: 165px;
+    .container {
+        height: 376px;
+        .bg{
+            position: absolute;
+            width: 80%;
+            height: inherit;
+            background-color: #7de0ea;
+            transform: rotate(-1.34deg);
+            border-radius: 32px;
+            left: 9%;
+        }
+        .section-content{
+            background-image: url("src/assets/images/CallToAction/LinesCall.svg");
+            background-color: #583FBC ;
+            background-repeat: no-repeat;
+            border-radius: 32px;
+            height: inherit;
+            width: inherit;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            left: 5%;
+            .vector {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                z-index: 3;
+            }
+            .title1{
+                max-width: 550px;
+                h1{
+                    color: var(--bg-color);
+                    font-size: 48px;
+                    font-weight: 600;
+                }
+                .descrtiption{
+                    font-size: 20px;
+                    margin-top: 10px;
+                    font-weight: 200;
+                    color: rgb(246, 242, 242);
+                    strong{
+                        font-weight: 900;
+                    }
+                }
+            }
+            .btn2{
+                button{
+                    svg{
+                        width: 16px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+
+/*************************CallToAction Responsive***********************/
+@media screen and (max-width : 992px) {
+    .CallToAction {
+        .container {
+            margin: 0 auto;
+                .section-content {
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 20px;
+                    padding: 20px ;
+                .title1{
+                        h2 {
+                            font-size: 30px;
+                        }
+                        .descrtiption{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+            .section-content{
+                background-image: url("src/assets/images/CallToAction/LinesCall.svg");
+            }
+        }
+        
+    }

@@ -1,0 +1,158 @@
+.education-section {
+    text-align: center;
+    padding: 0 70px;
+    margin-top: 125px;
+    .container{
+        position: relative;
+        .square{
+            position: absolute;
+            width: 37px;
+            height: 38px;
+            background-color: #7DE0EA; 
+            top: 24%;
+            right: 0;
+            transform: rotate(36deg);
+            border-radius: 12px;
+        }
+        .decorative-circle-4{
+            position: absolute;
+            width: 11px;
+            height: 11px;
+            background-color: #7B55EC;
+            border-radius: 50%;
+            top: 40px;
+            right: 11%;
+        }
+        .decorative-circle-5{
+            position: absolute;
+            width: 19px;
+            height: 19px;
+            background-color: #7DE0EA;
+            border-radius: 50%;
+            bottom: 40%;
+            right: 0;
+        }
+        .Section-Title{
+            padding-bottom: 88px;
+            span{
+                font-weight: 500;
+                font-size: 20px;
+                color: var(--second-color);
+            }
+            h1{
+                font-weight: 600;
+                font-size: 40px;
+                color: var(--first-color);
+            }
+        }
+        .education-container{
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+            column-gap: 92px;
+                .square2{
+                    position: absolute;
+                    width: 37px;
+                    height: 38px;
+                    background-color: #7DE0EA; 
+                    bottom: -16%;
+                    left: -4%;
+                    transform: rotate(177.74deg);
+                    border-radius: 12px;
+                }
+                .decorative-circle-6{
+                    position: absolute;
+                    width: 11px;
+                    height: 11px;
+                    background-color: #9575f3;
+                    border-radius: 50%;
+                    bottom: -24%;
+                    left: 10%;
+                    z-index: 34;
+                }
+                .decorative-circle-7{
+                    position: absolute;
+                    width: 19px;
+                    height: 19px;
+                    background-color: #7DE0EA;
+                    border-radius: 50%;
+                    bottom: 0;
+                    left: -5.5%;
+                }
+            
+        }
+        .education-card {
+            position: relative;
+            padding-left: 47px;
+            border-left: 3px dashed #344054;
+            h4{
+                text-align: left;
+                font-weight: 500;
+                font-size: 25px;
+                margin-bottom: 14px;
+                color: #344054;
+            }
+            .description{
+                text-align: left;
+                font-weight: 400;
+                font-size: 16px;
+                margin-bottom: 46px;
+                color: #98A2B3;
+            }
+            
+        }
+        .education-card::before {
+            content: "";
+            position: absolute;
+            left: -12px;
+            top: -4.5px;
+            width: 20px;
+            height: 20px;
+            background-color: #fff;
+            border-radius: 50%;
+            border: 2px dashed #1d2939;
+        }
+        .education-card::after {
+            content: "";
+            position: absolute;
+            left: -7.5px;
+            top: 0;
+            width: 15px;
+            height: 15px;
+            background-color: #7de0ea;
+            border-radius: 50%;
+        }
+    }
+}
+.mode-dark .education-section .container .Section-Title h1 {
+    color: #FFFFFF;
+}
+.mode-dark .education-section .container .education-card h4 {
+    color: #FFFFFF;
+}
+/*************************Education Responsive***********************/
+@media screen and (max-width : 992px) {
+    .education-section {
+        margin-top: 50px;
+        padding: 0px 20px;
+        .container{
+            .Section-Title{
+                padding-bottom: 70px;
+                span{
+                    font-weight: 500;
+                    font-size: 15px;
+                    color: var(--second-color);
+                }
+                h1{
+                    font-weight: 600;
+                    font-size: 20px;
+                    color: var(--first-color);
+                }
+            }
+            .education-container{
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+        }
+        
+    }
+}

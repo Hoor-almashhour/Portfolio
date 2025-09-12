@@ -1,0 +1,151 @@
+.project-details {
+    margin-top: 94px;
+    position: relative;
+    border-bottom: 1px dashed var(--first-color);
+    .hero-dot{
+        position: absolute;
+        width: 4px; 
+        height: 4px;
+        background-color: var(--first-color); 
+        border-radius: 50%; 
+        top: 100%; 
+        left: 50%;
+        transform: translate(-50%, -50%); 
+        z-index: 2;
+    }
+    .hero-circle{
+        position: absolute;
+        width: 15px; 
+        height: 15px;
+        background-color: transparent; 
+        border: 1px solid var(--first-color);
+        border-radius: 50%; 
+        top: 100%; 
+        left: 50%;
+        transform: translate(-50%, -50%); 
+        z-index: 2;
+    }
+    .hero-circle-2{
+        position: absolute;
+        width: 22px; 
+        height: 22px;
+        background-color: transparent; 
+        border: 1px solid var(--first-color);
+        border-radius: 50%; 
+        top: 100%; 
+        left: 50%;
+        transform: translate(-50%, -50%); 
+        z-index: 2;
+    }
+    .container{
+        display: flex;
+        position: relative;
+        gap: 43px;
+        margin-bottom: 79px;
+        .images{
+            img{
+                width: 100%;
+                border-radius: 8px;
+            }
+        }
+        .info {
+            width: 100%;
+            .project-title{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .project-name{
+                    h2{
+                        font-size: 28px;
+                        font-weight: 600;
+                        color: var(--first-color);
+                    }
+                    p{
+                        font-size: 14px;
+                        font-weight: 500;
+                        color: #A6A6A6;
+                        span{
+                            font-size: 14px;
+                            font-weight: 500;
+                            color: #A6A6A6;
+                        }
+                    }
+                }
+                .project-icon2{
+                        svg{
+                            cursor: pointer;
+                            font-size: 35px;
+                            color: var(--second-color);
+                        }
+                }
+            }
+            .detailes{
+                .project-description{
+                    color: #666666;         
+                    line-height: 1.6;       
+                    font-size: 1rem;
+                    font-weight: 400;
+                    margin-bottom: 17.35px;
+                }
+                .desc{
+                    display: flex;
+                    flex-direction: column;
+                    .lang ,.framework ,.libraries{
+                        color: #666666;  
+                        margin-bottom: 0.5rem;
+                        font-size: 0.95rem;
+                    }
+                    
+                    
+                }
+            }
+            .desc strong {
+                color: #1D2130;         
+                font-weight: 700;       
+                font-size: 1rem;
+            }
+            .github-btn{
+                margin-top: 29.5px;
+                a{
+                    text-decoration: none;
+                    text-align: center;
+                }
+            }
+        }
+    }
+} 
+.mode-dark .project-details {
+    border-bottom: 1px dashed var(--bg-color);
+}
+.mode-dark .project-details .hero-circle{
+    background-color: #ffff;
+    background-color: #fff;  
+    width: 22px;              
+    height: 22px;
+}
+.mode-dark .project-details .container .info .project-title .project-name h2{
+    color: #ffff;
+}
+.mode-dark .project-details .container .detailes .project-description  {
+    color: #fff;
+}
+.mode-dark .project-details .container .detailes .desc strong {
+    color: #fff;
+}
+.mode-dark .project-details .container .detailes .desc .lang {
+    color: #fff;
+}
+.mode-dark .project-details .container .detailes .desc .libraries{
+    color: #fff;
+}
+.mode-dark .project-details .container .detailes .desc .framework{
+    color: #fff;
+}
+/*************************ProjectDetails Responsive***********************/
+@media screen and (max-width : 992px) {
+    .project-details{
+        .container{
+            flex-direction: column-reverse;
+        }
+    }
+}

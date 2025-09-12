@@ -1,0 +1,108 @@
+    .contact-section {
+        margin-bottom: 94px;
+        padding: 0 70px;
+    }
+    .contact-content {
+        display: flex;
+        gap: 40px;
+        margin-top: 56px;
+    }
+    
+    .contact-info {
+        flex: 1;
+        gap: 24px;
+        .contact-call,.contact-email,.contact-address{
+            display: flex;
+            gap: 10px;
+            padding-bottom: 24px;
+            .phone-icon,.email-icon,.address-icon{
+                color: var(--bg-color);
+                background: var(--second-color);
+                padding: 20px 25px;
+                border-radius: 8px;
+                svg{
+                    font-size: 30px;
+                    text-align: center;
+                }
+            }
+            .number ,.address,.email{
+                span{
+                    color: #92929D;
+                    font-size: 14px;
+                } 
+                p{
+                    font-size: 16px;
+                    color: var(--first-color);;
+                }
+            }
+        }
+    }
+    
+    .contact-form {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .inputs{
+            display: flex;
+            gap:24px;
+            width: 100%;
+        }
+    }
+    .contact-form .inputs .fullname,
+    .contact-form .inputs .email {
+        flex: 1;
+    }
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        padding: 16px;
+        border: 1px solid #92929D;
+        border-radius: 8px;
+    }
+    
+    .contact-form button {
+        background: var(--second-color);
+        color: var(--bg-color);
+        border: none;
+        cursor: pointer;
+        width: 175px;
+        text-align: center;
+    }
+    .mode-dark .contact-section h1 {
+        color: #fff;
+    }
+    .mode-dark .contact-section .number p {
+        color: #fff;
+    }
+    .mode-dark .contact-section .email  p {
+        color: #fff;
+    }
+    .mode-dark .contact-section .address  p {
+        color: #fff;
+    }
+
+/*************************Contact Responsive***********************/
+@media screen and (max-width : 992px) {
+    .contact-section{
+        padding: 0 20px;
+        .contact-content{
+            flex-direction: column;
+            .contact-form{
+                button{
+                    width: fit-content;
+                }
+            }
+            .contact-info{
+                .contact-call,.contact-email,.contact-address{
+                    .number ,.address,.email{
+                        p{
+                            font-size: 14px;
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
