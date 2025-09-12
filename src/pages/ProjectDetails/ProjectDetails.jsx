@@ -95,7 +95,7 @@ const projects = [
             fullDescription: 'This project is a Next.js front-end for an e-learning platform with centralized state management (Redux/Redux Toolkit) to handle courses, user authentication, pagination, and displaying course details.',
             date: '15-03-2025',
             languages: 'Html5, Tailwind Css, TypeScript - Redux Toolkit/Redux - Next.js',
-            Framework: 'Next.js',
+            framework: 'Next.js',
             github: 'https://github.com/Hoor-almashhour/online-courses',
             demo: "https://online-courses-edu.vercel.app",
         },
