@@ -92,7 +92,7 @@ const projects = [
             title: 'online-courses ',
             icon:<LuCircleArrowOutUpRight />,
             image:  Screenshot7,
-            fullDescription: 'is a secure, API-driven admin panel perfect for businesses needing: User authentication (Login/Signup/Logout).  Product management (Add, Edit, Delete). Real-time updates via API.',
+            fullDescription: 'This project is a Next.js front-end for an e-learning platform with centralized state management (Redux/Redux Toolkit) to handle courses, user authentication, pagination, and displaying course details.',
             date: '15-03-2025',
             languages: 'Html5, Tailwind Css, TypeScript - Redux Toolkit/Redux - Next.js',
             Framework: 'Next.js',
