@@ -1,10 +1,12 @@
-import React, { useState } from 'react'
+
 import NavBar from '../../components/NavBar/NavBar'
-import { Link, Navigate, useNavigate } from 'react-router-dom';
+import { Link, } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 import { LuCircleArrowOutUpRight } from "react-icons/lu";
 import Button from '../../components/Button/Button';
 import './ProjectDetails.css'
+import ramahamou from '../../assets/images/ProjectsImg/rama-hamou.png';
+import t2 from '../../assets/images/ProjectsImg/t2.png';
 import EduPress from '../../assets/images/ProjectsImg/EduPress.png';
 import ProductShowcase from '../../assets/images/ProjectsImg/ProductShowcase.png';
 import ManagePosts from '../../assets/images/ProjectsImg/ManagePosts.png';
@@ -98,6 +100,30 @@ const projects = [
             framework: 'Next.js',
             github: 'https://github.com/Hoor-almashhour/online-courses',
             demo: "https://online-courses-edu.vercel.app",
+        },
+         {
+            id: 8,
+            title: 't2-accessories ',
+            icon:<LuCircleArrowOutUpRight />,
+            image:  t2,
+            fullDescription: 'This project is a Next.js e-commerce platform for accessories, using Supabase for database management, authentication, and API integration. It features responsive design with Tailwind CSS, TypeScript for type safety, and dynamic rendering of products.',
+            date: '10-10-2025',
+            languages: 'Html5, Tailwind CSS, TypeScript - Next.js - Supabase',
+            framework: 'Next.js',
+            github: 'https://github.com/Hoor-almashhour/T2-Accessories',
+            demo:"https://t2-accessories.vercel.app",
+        },
+        {
+            id: 9,
+            title: 'ramahamou-blogspot',
+            icon:<LuCircleArrowOutUpRight />,
+            image: ramahamou,
+            fullDescription: "Rama Blogspot is a modern blogging platform built with Next.js and TypeScript. It uses Supabase for database management, user authentication, and dynamic fetching of posts. The platform features a responsive design with Tailwind CSS, allowing users to browse articles, filter by categories or tags, and view post details seamlessly. The project demonstrates the integration of a frontend framework with a backend service for a smooth full-stack experience, emphasizing performance, scalability, and maintainability.",
+            date: '18-11-2025',
+            languages: 'Html5, Tailwind CSS, TypeScript - Next.js - Supabase',
+            framework: 'Next.js',
+            github: 'https://github.com/Hoor-almashhour/ramahamou-blogspot',
+            demo:  "https://ramahamou-blogspot.vercel.app",
         },
     ]
 const ProjectDetails = () => {

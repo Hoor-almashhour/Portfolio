@@ -8,6 +8,10 @@ import EduPress from '../../assets/images/ProjectsImg/EduPress.png';
 import ProductShowcase from '../../assets/images/ProjectsImg/ProductShowcase.png';
 import ManagePosts from '../../assets/images/ProjectsImg/ManagePosts.png';
 import Blogs from '../../assets/images/ProjectsImg/Blogs.png';
+import t2 from '../../assets/images/ProjectsImg/t2.png';
+import ramahamou from '../../assets/images/ProjectsImg/rama-hamou.png';
+import Screenshot9 from '../../assets/images/FullScreen/Screenshot9.png';
+import Screenshot8 from '../../assets/images/FullScreen/Screenshot8.png';
 import Screenshot7 from '../../assets/images/FullScreen/Screenshot7.png';
 import Screenshot6 from '../../assets/images/FullScreen/Screenshot6.png';
 import Screenshot5 from '../../assets/images/FullScreen/Screenshot5.png';
@@ -80,6 +84,24 @@ const projects = [
             image: Screenshot7,
             fullscreen: Screenshot7,
             demo:"https://online-courses-edu.vercel.app",
+        },
+         {
+          id: 8,
+          title: 't2-accessories',
+          description: 'Next.js & TypeScript frontend, Tailwind CSS, Supabase backend (DB, Auth, API)',
+          icon:<LuCircleArrowOutUpRight />,
+          image: t2,
+          fullscreen: Screenshot8,
+          demo:"https://t2-accessories.vercel.app",
+        },
+         {
+            id: 9,
+            title: 'ramahamou-blogspot',
+            description: 'Next.js & TypeScript frontend, Tailwind CSS, Supabase backend (DB, Auth, API)',
+            icon:<LuCircleArrowOutUpRight />,
+            image: ramahamou,
+            fullscreen: Screenshot9,
+            demo:"https://ramahamou-blogspot.vercel.app",
         },
     ];
 
